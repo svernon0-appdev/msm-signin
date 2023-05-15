@@ -134,7 +134,12 @@
         </td>
 
         <td>
-          <%= a_movie.director_id %>
+          <%# dir = Director.where({ :id => a_movie.director_id }).first %>
+
+          <%#= dir.name %>
+
+          <%= a_movie.director.name %>
+          (<%= a_movie.director.dob %>)
         </td>
 
         <td>
